@@ -1,0 +1,262 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    .MainLayout{
+      display: flex;
+      width: 100%;
+    }
+    .PersonalInformationLayout{
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      background-color: #2c3e50;
+      padding: 40px 25px;
+    }
+    .IntroduceInformationLayout{
+      flex: 8;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      padding: 40px 25px;
+    }
+    .ProFileLayout{
+      display: flex;
+      width: 100%;
+      height: 150px;
+      justify-content: center;
+      align-items: center;
+    }
+    .ProFileLayout img{
+      width: 120px;
+      height: 140px;
+      object-fit: cover;
+    }
+    .Name{
+      display: flex;
+      font-size: 30px;
+      color: white;
+      justify-content: center;
+    }
+    .PersonalInformationContent{
+      display: flex;
+      font-size: 15px;
+      color: white;
+      margin: 5px;
+    }
+    .PersonalInformationTitle{
+      font-size: 25px;
+      color: #3498db;
+    }
+    .SkillContent{
+      background-color: #2f516d;
+      display: inline-block;
+      font-size: 15px;
+      border-radius: 15px;
+      margin: 5px 15px;
+      padding: 5px 15px;
+      color: white;
+    }
+    .ContactInformationLayout{
+      margin-top: auto;
+    }
+    .IntroduceTitle{
+      color: #2c3e50;
+      font-size: 30px;
+      font-weight: bold;
+      border-bottom: 2px solid #3498db;
+      margin: 10px 0;
+    }
+    .IntroduceContentLayout{
+      background-color: #f8f9fa;
+      border-left: 5px solid #3498db;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px;
+    }
+    .IntroduceContentLayout-Title{
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .IntroduceContentLayout-Content{
+      font-size: 15px;
+    }
+    .VideoLayout{
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      padding: 10px;
+    }
+    .VideoContentLayout{
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    .VideoContentLayout video{
+      width: 640px;
+      height: 400px;
+      object-fit: cover;
+    }
+    .VideoControlLayout{
+      display: flex;
+      padding: 10px;
+      justify-content: center;
+    }
+    .VideoControlLayout button{
+      background-color: #3498db;
+      width: 100px;
+      height: 50px;
+      margin: 10px 25px;
+      border-radius: 25px;
+    }
+    .VideoTextLayout{
+      display: flex;
+      flex-direction: column;
+    }
+    .VideoTextLayout-Text{
+      font-size: 15px;
+    }
+    @media screen and (max-width: 750px) {
+      .MainLayout {
+        flex-direction: column;
+      }
+      .VideoContentLayout video {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="MainLayout">
+  <div class="PersonalInformationLayout">
+    <div class="ProFileLayout">
+      <img src="img/Image/头像.jpg" alt="头像">
+    </div>
+    <div class="Name">黄昆程</div>
+    <div class="PersonalInformationContent">长安大学 2024级</div>
+    <div class="PersonalInformationContent">道路桥梁与渡河工程(国际工程班)</div>
+    <div class="PersonalInformationTitle">专业技能</div>
+    <div>
+      <span class="SkillContent">Python</span>
+      <span class="SkillContent">C#</span>
+      <span class="SkillContent">AutoCAD二次开发</span>
+      <span class="SkillContent">Web前端</span>
+    </div>
+    <div class="ContactInformationLayout">
+      <div class="PersonalInformationTitle">联系方式</div>
+      <div>
+        <div class="PersonalInformationContent">邮箱:2024903811@chd.edu.cn</div>
+        <div class="PersonalInformationContent">电话:13976639743</div>
+        <div class="PersonalInformationContent">微信:RdJ7748h</div>
+        <div class="PersonalInformationContent">QQ:494212901</div>
+      </div>
+    </div>
+  </div>
+  <div class="IntroduceInformationLayout">
+    <div class="IntroduceTitle">个人技能</div>
+    <div class="IntroduceContentLayout">
+      <div class="IntroduceContentLayout-Title">编程</div>
+      <div class="IntroduceContentLayout-Content">熟练掌握NumPy、Pandas、Matplotlib等科学计算与数据可视化库，熟悉PyQt、DearPyGUI等GUI开发框架</div>
+      <div class="IntroduceContentLayout-Content">入门C#编程语言，熟悉AutoCAD API接口、WPF开发框架，具备一定CAD二次开发经验</div>
+    </div>
+    <div class="IntroduceContentLayout">
+      <div class="IntroduceContentLayout-Title">建模与渲染</div>
+      <div class="IntroduceContentLayout-Content">熟练运用AutoCAD、Civil 3D、Revit、SolidWorks、SketchUp等建模软件</div>
+      <div class="IntroduceContentLayout-Content">掌握D5 Render、Twinmotion、Enscape等渲染工具，能够完成模型渲染与动画制作</div>
+    </div>
+    <div class="IntroduceTitle">竞赛经历</div>
+    <div class="IntroduceContentLayout">
+      <div class="IntroduceContentLayout-Content">全国大学生先进成图技术与产品信息建模创新大赛(省第一名)</div>
+      <div class="IntroduceContentLayout-Content">全国大学生物理实验竞赛(省一等奖)</div>
+      <div class="IntroduceContentLayout-Content">全国大学生物理学术竞赛(省一等奖)</div>
+      <div class="IntroduceContentLayout-Content">“中交公规院杯”2025世界大学生桥梁设计大赛(国三等奖)</div>
+    </div>
+    <div class="IntroduceTitle">作品展示</div>
+    <div class="VideoLayout">
+      <div class="VideoContentLayout">
+        <video id="Video" controls></video>
+      </div>
+      <div class="VideoControlLayout">
+        <button id="PreviousButton" style="color: white">上一个</button>
+        <button id="NextButton" style="color: white">下一个</button>
+      </div>
+      <div class="VideoTextLayout">
+        <div class="VideoTextLayout-Text" id="Description"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  class VideoInformation{
+    constructor(videoPath, videoDescription) {
+      this.videoPath = videoPath;
+      this.videoDescription = videoDescription;
+    }
+  }
+  class VideoManger
+  {
+    constructor()
+    {
+      this.VideoInformationList = [];
+      this.CurrentVideoIndex = 0;
+      this.VideoCount = 0;
+      this.CurrentVideoPath = "";
+      this.CurrentVideoDescription = "";
+    }
+    AddVideoInformation(videoPath, videoDescription)
+    {
+      this.VideoInformationList.push(new VideoInformation(videoPath, videoDescription));
+      this.VideoCount++;
+      this.CurrentVideoIndex = this.VideoCount - 1;
+      this.CurrentVideoPath = this.VideoInformationList[this.CurrentVideoIndex].videoPath;
+      this.CurrentVideoDescription = this.VideoInformationList[this.CurrentVideoIndex].videoDescription;
+    }
+    TurnToNextVideo()
+    {
+      if (this.CurrentVideoIndex < this.VideoCount - 1) this.CurrentVideoIndex++;
+      else if (this.CurrentVideoIndex === this.VideoCount-1){this.CurrentVideoIndex = 0;}
+      this.CurrentVideoPath = this.VideoInformationList[this.CurrentVideoIndex].videoPath;
+      this.CurrentVideoDescription = this.VideoInformationList[this.CurrentVideoIndex].videoDescription;
+    }
+    TurnToPreviousVideo()
+    {
+      if (this.CurrentVideoIndex > 0) this.CurrentVideoIndex--;
+      else if (this.CurrentVideoIndex === 0){this.CurrentVideoIndex = this.VideoCount - 1;}
+      this.CurrentVideoPath = this.VideoInformationList[this.CurrentVideoIndex].videoPath;
+      this.CurrentVideoDescription = this.VideoInformationList[this.CurrentVideoIndex].videoDescription;
+    }
+  }
+  let videoManger = new VideoManger();
+  videoManger.AddVideoInformation("img/Video/ai大模型生成cad图元.mp4","这是一个基于C#和AutoCAD .NET API开发的智能CAD几何数据生成工具。它通过集成本地Ollama大语言模型（默认使用Qwen2.5:7b），允许用户用自然语言描述几何图形（如“在原点画一个半径为5的圆”），模型则会生成可直接解析的JSON结构数据。系统自动将JSON转换为AutoCAD实体（直线、圆弧、圆），并直接添加到当前CAD图纸中，实现了从自然语言到CAD图形的快速生成与建模。该项目采用了MVVM架构，包含完整的UI交互、模型服务和几何工具库.")
+  videoManger.AddVideoInformation("img/Video/物理实验竞赛写的程序.mp4", "这是一个基于Pymunk物理引擎和DearPyGui的质点-弹簧系统振动模拟工具，核心技术包括物理建模（质点动力学、弹簧约束）、实时模拟（数值积分、碰撞检测）、傅里叶分析（时域/空域FFT算法）、数据可视化（热力图、频谱图）以及交互式图形界面设计，完整实现了从物理仿真到振动分析的全流程。");
+  videoManger.AddVideoInformation("img/Video/3维可视化器.mp4", "这是一个基于Python,Tkinter的3D图形可视化系统，核心技术涉及三维几何建模（定义点、线、面基础元素）、坐标变换（使用NumPy矩阵进行旋转、缩放、平移）、视图投影（通过视图矩阵实现3D到2D的透视投影）以及深度排序算法（Z-buffering原理）以实现正确的遮挡关系。系统采用模型-视图分离架构，并通过事件驱动机制实现鼠标交互（旋转、平移、缩放），完整演示了计算机图形学中从建模到渲染的基本管线流程。");
+  videoManger.AddVideoInformation("img/Video/CAD点阵文本生成器.mp4", "这是一个基于WPF MVVM架构的AutoCAD二次开发项目，核心技术涉及使用C#和WPF构建图形用户界面，通过MathNet.Numerics进行矩阵运算实现字符到点阵的转换映射，利用AutoCAD .NET API进行三维实体建模（创建立方体），采用RelayCommand模式实现命令绑定，并通过PaletteSet将WPF控件集成到AutoCAD工作空间中，实现了从文本输入到三维立方体阵列的自动化生成功能。");
+  videoManger.AddVideoInformation("img/Video/图片转换器.mp4", "这是一个基于PyQt6的图像格式转换工具，核心技术涉及使用PIL库进行图像处理（格式识别、打开和保存），通过PyQt6构建图形用户界面实现文件管理、预览和批量操作。系统采用事件驱动架构处理用户交互（按钮点击、列表选择），实现了图像信息的元数据提取（尺寸、格式、文件大小等）和批量格式转换功能，完整展示了从图像读取到格式转换的完整处理流程。");
+  videoManger.AddVideoInformation("img/Video/桥梁模型.mp4", "这个是当时全国大学生先进成图技术与产品信息建模创新大赛国赛的题目,但是因为某些原因未能完成比赛,错失了国奖,现在想想感觉还是挺可惜的");
+  videoManger.AddVideoInformation("img/Video/SW乐高车.mp4", "这是很久之前用solidworks做的一个以乐高为原型的车辆,感觉挺好玩的");
+  videoManger.AddVideoInformation("img/Video/CAD二次开发.mp4","这是一个基于AutoCAD的二次开发项目，旨在实现桥梁的三维参数化建模。项目名称为AutoCadTool，它提供了一整套工具集，包含曲线处理、数据库操作、实体变换、扫掠拉伸等底层功能，并基于这些工具开发了针对T型梁、桥墩等桥梁构件的参数化建模服务。项目采用C#开发，架构上融合了工具类、服务层与WPF MVVM模式，用户可通过界面输入参数，快速自动生成复杂的桥梁三维实体模型，显著提升设计效率。")
+  const video = document.getElementById("Video");
+  const description = document.getElementById("Description");
+  const nextButton = document.getElementById("NextButton");
+  const previousButton = document.getElementById("PreviousButton");
+  function VideoUpdate() {
+    video.src = videoManger.CurrentVideoPath;
+    description.innerText = videoManger.CurrentVideoDescription;
+  }
+  nextButton.onclick = function () {
+    videoManger.TurnToNextVideo();
+    VideoUpdate();
+  };
+  previousButton.onclick = function () {
+    videoManger.TurnToPreviousVideo();
+    VideoUpdate();
+  }
+  VideoUpdate();
+</script>
+</body>
+</html>
