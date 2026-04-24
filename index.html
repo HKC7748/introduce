@@ -232,14 +232,15 @@
     }
   }
   let videoManger = new VideoManger();
-  videoManger.AddVideoInformation("img/Video/ai大模型生成cad图元.mp4","这是一个基于C#和AutoCAD .NET API开发的智能CAD几何数据生成工具。它通过集成本地Ollama大语言模型（默认使用Qwen2.5:7b），允许用户用自然语言描述几何图形（如“在原点画一个半径为5的圆”），模型则会生成可直接解析的JSON结构数据。系统自动将JSON转换为AutoCAD实体（直线、圆弧、圆），并直接添加到当前CAD图纸中，实现了从自然语言到CAD图形的快速生成与建模。该项目采用了MVVM架构，包含完整的UI交互、模型服务和几何工具库.")
-  videoManger.AddVideoInformation("img/Video/物理实验竞赛写的程序.mp4", "这是一个基于Pymunk物理引擎和DearPyGui的质点-弹簧系统振动模拟工具，核心技术包括物理建模（质点动力学、弹簧约束）、实时模拟（数值积分、碰撞检测）、傅里叶分析（时域/空域FFT算法）、数据可视化（热力图、频谱图）以及交互式图形界面设计，完整实现了从物理仿真到振动分析的全流程。");
-  videoManger.AddVideoInformation("img/Video/3维可视化器.mp4", "这是一个基于Python,Tkinter的3D图形可视化系统，核心技术涉及三维几何建模（定义点、线、面基础元素）、坐标变换（使用NumPy矩阵进行旋转、缩放、平移）、视图投影（通过视图矩阵实现3D到2D的透视投影）以及深度排序算法（Z-buffering原理）以实现正确的遮挡关系。系统采用模型-视图分离架构，并通过事件驱动机制实现鼠标交互（旋转、平移、缩放），完整演示了计算机图形学中从建模到渲染的基本管线流程。");
-  videoManger.AddVideoInformation("img/Video/CAD点阵文本生成器.mp4", "这是一个基于WPF MVVM架构的AutoCAD二次开发项目，核心技术涉及使用C#和WPF构建图形用户界面，通过MathNet.Numerics进行矩阵运算实现字符到点阵的转换映射，利用AutoCAD .NET API进行三维实体建模（创建立方体），采用RelayCommand模式实现命令绑定，并通过PaletteSet将WPF控件集成到AutoCAD工作空间中，实现了从文本输入到三维立方体阵列的自动化生成功能。");
-  videoManger.AddVideoInformation("img/Video/图片转换器.mp4", "这是一个基于PyQt6的图像格式转换工具，核心技术涉及使用PIL库进行图像处理（格式识别、打开和保存），通过PyQt6构建图形用户界面实现文件管理、预览和批量操作。系统采用事件驱动架构处理用户交互（按钮点击、列表选择），实现了图像信息的元数据提取（尺寸、格式、文件大小等）和批量格式转换功能，完整展示了从图像读取到格式转换的完整处理流程。");
+  videoManger.AddVideoInformation("img/Video/ai大模型生成cad图元.mp4","这是一个基于C#和AutoCAD .NET API开发的智能CAD几何数据生成工具。它通过集成本地Ollama大语言模型，允许用户用自然语言描述几何图形（如“在原点画一个半径为5的圆”），模型则会生成可直接解析的JSON结构数据。系统自动将JSON转换为AutoCAD实体，并直接添加到当前CAD图纸中，实现了从自然语言到CAD图形的快速生成与建模。")
+  videoManger.AddVideoInformation("img/Video/物理实验竞赛写的程序.mp4", "这是一个基于Pymunk物理引擎和DearPyGui的质点-弹簧系统振动模拟工具，核心技术包括物理建模、实时模拟、傅里叶分析、数据可视化以及交互式图形界面设计，完整实现了从物理仿真到振动分析的全流程。");
+  videoManger.AddVideoInformation("img/Video/三维地球模型渲染.mp4", "这是一个利用二维平面模拟并渲染三维地球模型可视化系统。通过数学模型构建球体网格，并应用纹理贴图、三维旋转变换和透视投影，将三维坐标实时计算并绘制到二维的Pygame窗口或Turtle画布中，实现了动态、交互式的三维可视化效果。");
+  videoManger.AddVideoInformation("img/Video/3维可视化器.mp4", "这是一个基于Tkinter的3D图形可视化系统，核心技术涉及三维几何建模、坐标变换、视图投影以及深度排序算法以实现正确的遮挡关系。完整演示了计算机图形学中从建模到渲染的基本管线流程。");
+  videoManger.AddVideoInformation("img/Video/CAD点阵文本生成器.mp4", "这是一个基于WPF MVVM架构的AutoCAD二次开发项目，核心技术涉及使用C#和WPF构建图形用户界面，通过MathNet.Numerics进行矩阵运算实现字符到点阵的转换映射，利用AutoCAD .NET API进行三维实体建模，实现了从文本输入到三维立方体阵列的自动化生成功能。");
+  videoManger.AddVideoInformation("img/Video/图片转换器.mp4", "这是一个基于PyQt6的图像格式转换工具，核心技术涉及使用PIL库进行图像处理，通过PyQt6构建图形用户界面实现文件管理、预览和批量操作。系统采用事件驱动架构处理用户交互，实现了图像信息的元数据提取和批量格式转换功能，完整展示了从图像读取到格式转换的完整处理流程。");
   videoManger.AddVideoInformation("img/Video/桥梁模型.mp4", "这个是当时全国大学生先进成图技术与产品信息建模创新大赛国赛的题目,但是因为某些原因未能完成比赛,错失了国奖,现在想想感觉还是挺可惜的");
   videoManger.AddVideoInformation("img/Video/SW乐高车.mp4", "这是很久之前用solidworks做的一个以乐高为原型的车辆,感觉挺好玩的");
-  videoManger.AddVideoInformation("img/Video/CAD二次开发.mp4","这是一个基于AutoCAD的二次开发项目，旨在实现桥梁的三维参数化建模。项目名称为AutoCadTool，它提供了一整套工具集，包含曲线处理、数据库操作、实体变换、扫掠拉伸等底层功能，并基于这些工具开发了针对T型梁、桥墩等桥梁构件的参数化建模服务。项目采用C#开发，架构上融合了工具类、服务层与WPF MVVM模式，用户可通过界面输入参数，快速自动生成复杂的桥梁三维实体模型，显著提升设计效率。")
+  videoManger.AddVideoInformation("img/Video/CAD二次开发.mp4","这是一个基于AutoCAD的二次开发项目，旨在实现桥梁的三维参数化建模。项目提供了一整套工具集，包含曲线处理、数据库操作、实体变换、扫掠拉伸等底层功能，并基于这些工具开发了针对T型梁、桥墩等桥梁构件的参数化建模服务。项目采用C#开发，架构上融合了工具类、服务层与WPF MVVM模式，用户可通过界面输入参数，快速自动生成复杂的桥梁三维实体模型。")
   const video = document.getElementById("Video");
   const description = document.getElementById("Description");
   const nextButton = document.getElementById("NextButton");
